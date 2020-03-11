@@ -32,7 +32,7 @@ app.use(
         console.log("origin=====>", req.get('origin'));
         next();
     },
-    express.static("build")
+    express.static(path.join(process.cwd(), "build"))
 );
 
 app.post("/crash-report", upload, (req, res) => {
