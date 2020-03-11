@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(
-    "/source-map",
+    "/build",
     function (req, res, next) {
         console.log("req.query=====>", req.query);
         console.log("req.params=====>", req.params);
