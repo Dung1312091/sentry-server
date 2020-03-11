@@ -53,6 +53,6 @@ app.get("/source-map:path", (req, res) => {
   res.json({});
 });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log("running on port 3001");
 });
