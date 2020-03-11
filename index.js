@@ -29,6 +29,7 @@ app.use(
         console.log("url=====>", req.url);
         console.log("originalUrl=====>", req.originalUrl);
         console.log("headers=====>", req.headers);
+        console.log("origin=====>", req.get('origin'));
         next();
     },
     express.static("build")
