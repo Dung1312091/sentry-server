@@ -26,8 +26,7 @@ app.get("/", (req, res) => {
 app.use(
     "/build",
     function (req, res, next) {
-        console.log("req.query=====>", req.query);
-        console.log("req.params=====>", req.params);
+        console.log("req=====>", req);
         next();
     },
     express.static("build")
